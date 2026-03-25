@@ -1131,6 +1131,23 @@
       .hero-actions .btn { text-align: center; justify-content: center; }
       .contact-form { padding: 1.8rem 1.4rem; }
     }
+    /* WATERMARK */
+    body::before {
+      content: 'Demoverze – Tomáš Smolík';
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-35deg);
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-weight: 700;
+      color: rgba(200, 32, 42, 0.12);
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 9999;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-family: 'Bebas Neue', sans-serif;
+    }
   </style>
 </head>
 <body>
