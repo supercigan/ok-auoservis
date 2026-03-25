@@ -510,6 +510,60 @@
     }
 
     /* =============================================
+       PRODEJ & ZNAČKY
+    ============================================= */
+    .prodej-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .prodej-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: all 0.3s ease;
+    }
+    .prodej-card:hover {
+      border-color: var(--red);
+      box-shadow: 0 8px 30px rgba(200,32,42,0.1);
+      transform: translateY(-3px);
+    }
+    .prodej-card-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--red-l);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--red);
+    }
+    .prodej-card h3 {
+      font-size: 1.4rem;
+      letter-spacing: 0.03em;
+      color: var(--text-dark);
+    }
+    .prodej-card p {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      flex: 1;
+    }
+    .prodej-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      color: var(--red);
+      border-top: 1px solid var(--border);
+      padding-top: 0.9rem;
+      margin-top: 0.3rem;
+    }
+
+    /* =============================================
        KLIMATIZACE
     ============================================= */
     .ac-section {
@@ -1007,6 +1061,7 @@
       .ac-grid { grid-template-columns: 1fr; gap: 3rem; }
       .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
       .pneu-grid { grid-template-columns: 1fr; }
+      .prodej-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
@@ -1169,6 +1224,45 @@
           </div>
           <div class="service-title">Díly, oleje a příslušenství</div>
           <div class="service-desc">Originální díly i kvalitní náhradní díly. Motorové oleje MOBIL, kapaliny a příslušenství přímo na místě.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PRODEJ & ZNAČKY
+  ============================================= -->
+  <section class="section section-slate" id="prodej">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Prodej & Značky</span>
+        <h2>Oleje, vozidla a náhradní díly</h2>
+        <p>Kromě servisu nabízíme také prodej originálních dílů, značkových olejů a zprostředkování ojetých vozidel ze zahraničí.</p>
+      </div>
+      <div class="prodej-grid">
+        <div class="prodej-card fade-up">
+          <div class="prodej-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Prodej značkových olejů a maziv</h3>
+          <p>Nabídka motorových olejů <strong>MOBIL 1</strong> a ostatních provozních náplní pro všechny běžně provozované osobní a dodávkové automobily. Prodej přímo na místě.</p>
+          <div class="prodej-brand">MOBIL 1</div>
+        </div>
+        <div class="prodej-card fade-up d2">
+          <div class="prodej-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3M9 17h10l4-4H13l-4 4zM13 17v4"/></svg>
+          </div>
+          <h3>Dovoz a prodej automobilů</h3>
+          <p>Zajišťujeme dovoz ojetých automobilů ze zahraničí — vozy důkladně prověřujeme před prodejem. Specializace na vozy <strong>Ford</strong>. V případě zájmu nás neváhejte kontaktovat.</p>
+          <div class="prodej-brand" style="color:#003399">FORD</div>
+        </div>
+        <div class="prodej-card fade-up d4">
+          <div class="prodej-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2zM7 7h.01"/></svg>
+          </div>
+          <h3>Prodej značkových dílů a doplňků</h3>
+          <p>Dodáváme kvalitní značkové autodíly, doplňky a pneumatiky na osobní a dodávková vozidla všech značek. Originální náhradní díly <strong>Ford</strong> za bezkonkurenční ceny.</p>
+          <div class="prodej-brand" style="color:#003399">FORD PARTS</div>
         </div>
       </div>
     </div>
